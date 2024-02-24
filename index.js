@@ -3,7 +3,7 @@ const { CronJob } = require('cron');
 const readlineSync = require('readline-sync');
 require('colors');
 
-function checkWebsite(address, callback) {
+export function checkWebsite(address, callback) {
   puppeteer
     .launch({
       headless: true,
